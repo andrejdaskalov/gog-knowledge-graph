@@ -16,26 +16,36 @@ predicates = dict()
 
 graph = Graph()
 
-for game_id in game_ids:
+def dict_to_triples(subject: URIRef, props: dict, prefix: str = "") -> list[tuple]:
+    tuples = []
+    for key in props.keys():
+        prefix_key = '_'.join([prefix, key]) if prefix != "" else key
+        if prefix_key not in predicates.keys():
+            predicates.update({prefix_key: URIRef(NAMESPACE+prefix_key)})
+
+        obj = props[key]
+        if type(obj) is dict:
+            tuples.extend(dict_to_triples(subject, obj, prefix=prefix_key))
+        else:
+            if url(obj):
+                obj = URIRef(obj)
+            else:
+                obj = Literal(obj)
+            tuples.append((subject, predicates[prefix_key], obj))
+
+    return tuples 
+
+
+for game_id in game_ids[:10]:
     try:
         game : dict = requests.get(BASE_URL+'/products/'+ game_id).json()
     except ValueError:
         print(f'Problem with game id: {game_id}.')
         continue
     game_entity = URIRef(NAMESPACE+ str( game['id'] ))
-
-    for key in game.keys():
-        if key not in predicates.keys():
-            predicates.update({key: URIRef(NAMESPACE+key)})
-
-        subject = game[key]
-        if url(subject):
-            subject = URIRef(subject)
-        else:
-            subject = Literal(subject)
-
-
-        graph.add((game_entity, predicates[key], subject))
+    triples = dict_to_triples(game_entity, game)
+    for triple in triples:
+        graph.add(triple)
 
 graph.serialize(destination="gog_kb.ttl", format="ttl")
 
