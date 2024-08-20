@@ -1,13 +1,25 @@
 @prefix ns1: <goggraph/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:1104739253 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx false ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1099102953> ;
+ns1:1104739253 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1099102953> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1099102953> ;
     ns1:dlcs_products "[{'id': 1099102953, 'link': 'https://api.gog.com/products/1099102953', 'expanded_link': 'https://api.gog.com/products/1099102953'}]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_ar,
+        ns1:lang_br,
+        ns1:lang_cn,
+        ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_es,
+        ns1:lang_fr,
+        ns1:lang_hu,
+        ns1:lang_it,
+        ns1:lang_nl,
+        ns1:lang_pl,
+        ns1:lang_ro,
+        ns1:lang_ru,
+        ns1:lang_tr ;
     ns1:id 1104739253 ;
     ns1:images_background "//images-1.gog-statics.com/65682ea3104d626723b20f2bf44754696069496adc0ffeb8280bebccbcc722b1.jpg" ;
     ns1:images_icon "//images-2.gog-statics.com/bcab23884ad407c5353e7adf5cbc341b1153517db085e34d9d9dd3d4918e844e.png" ;
@@ -19,23 +31,12 @@ ns1:1104739253 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/bcab23884ad407c5353e7adf5cbc341b1153517db085e34d9d9dd3d4918e844e_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_ar "العربية" ;
-    ns1:languages_br "Português do Brasil" ;
-    ns1:languages_cn "中文(简体)" ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_es "español" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_hu "magyar" ;
-    ns1:languages_it "italiano" ;
-    ns1:languages_nl "nederlands" ;
-    ns1:languages_pl "polski" ;
-    ns1:languages_ro "română" ;
-    ns1:languages_ru "русский" ;
-    ns1:languages_tr "Türkçe" ;
     ns1:links_forum <https://www.gog.com/forum/8bit_hordes> ;
     ns1:links_product_card <https://www.gog.com/en/game/8bit_hordes> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1104739253> ;
@@ -45,13 +46,15 @@ ns1:1104739253 ns1:content_system_compatibility_linux false ;
     ns1:slug "8bit_hordes" ;
     ns1:title "8-bit Hordes" .
 
-ns1:1207658658 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx false ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
+ns1:1207658658 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
     ns1:dlcs_products "[{'id': 1174619559, 'link': 'https://api.gog.com/products/1174619559', 'expanded_link': 'https://api.gog.com/products/1174619559'}, {'id': 1460547741, 'link': 'https://api.gog.com/products/1460547741', 'expanded_link': 'https://api.gog.com/products/1460547741'}]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_es,
+        ns1:lang_fr,
+        ns1:lang_it ;
     ns1:id 1207658658 ;
     ns1:images_background "//images-1.gog-statics.com/dc3162872244a0e7b1d90e48d5026c529ca20bd7655b110c110c122eb8976b77.jpg" ;
     ns1:images_icon "//images-3.gog-statics.com/656aea54fbe119c47a21215cb5828a92f03f0c0f172828a7d0468e12a195b5a5.png" ;
@@ -63,14 +66,12 @@ ns1:1207658658 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-2.gog-statics.com/656aea54fbe119c47a21215cb5828a92f03f0c0f172828a7d0468e12a195b5a5_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_es "español" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_it "italiano" ;
     ns1:links_forum <https://www.gog.com/forum/1nsane> ;
     ns1:links_product_card <https://www.gog.com/en/game/1nsane> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207658658> ;
@@ -80,11 +81,11 @@ ns1:1207658658 ns1:content_system_compatibility_linux false ;
     ns1:slug "1nsane" ;
     ns1:title "1nsane" .
 
-ns1:1207660773 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx false ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs "[]" ;
+ns1:1207660773 ns1:dlcs "[]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_it ;
     ns1:id 1207660773 ;
     ns1:images_background "//images-3.gog-statics.com/f9c802e33d6e51cf39061a1d44240be35320eaea564f49b1871ee80cbd313c46.jpg" ;
     ns1:images_icon "//images-2.gog-statics.com/763177ceb1550a8fb5b4aaae0f2612a4ce13b85c42b133f006d35f82c080b101.png" ;
@@ -96,12 +97,12 @@ ns1:1207660773 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-2.gog-statics.com/763177ceb1550a8fb5b4aaae0f2612a4ce13b85c42b133f006d35f82c080b101_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_it "italiano" ;
     ns1:links_forum <https://www.gog.com/forum/7th_legion> ;
     ns1:links_product_card <https://www.gog.com/en/game/7th_legion> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207660773> ;
@@ -111,11 +112,12 @@ ns1:1207660773 ns1:content_system_compatibility_linux false ;
     ns1:slug "7th_legion" ;
     ns1:title "7th Legion" .
 
-ns1:1207664483 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx true ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs "[]" ;
+ns1:1207664483 ns1:dlcs "[]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_fr,
+        ns1:lang_pl ;
     ns1:id 1207664483 ;
     ns1:images_background "//images-3.gog-statics.com/7ec9a6b2db2bf5b175344bc0edd02d8bd4f491553cb8474f0184bf9176f2af58.jpg" ;
     ns1:images_icon "//images-4.gog-statics.com/b36a512a42e06622cc771a36667bd1956040b7224b0d854f381856c64ae634b2.png" ;
@@ -127,13 +129,12 @@ ns1:1207664483 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/b36a512a42e06622cc771a36667bd1956040b7224b0d854f381856c64ae634b2_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_pl "polski" ;
     ns1:links_forum <https://www.gog.com/forum/1849> ;
     ns1:links_product_card <https://www.gog.com/en/game/1849_the_gold_rush> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207664483> ;
@@ -143,11 +144,9 @@ ns1:1207664483 ns1:content_system_compatibility_linux false ;
     ns1:slug "1849_the_gold_rush" ;
     ns1:title "1849: Gold Edition" .
 
-ns1:1207666213 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx true ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs "[]" ;
+ns1:1207666213 ns1:dlcs "[]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_en ;
     ns1:id 1207666213 ;
     ns1:images_background "//images-3.gog-statics.com/e7c0608f17b06dbfcceed3a71a4e49138ae654c666477da456010ab65d0ef70a.jpg" ;
     ns1:images_icon "//images-3.gog-statics.com/1968d2c451d03b15d81528e3bf65de7ca900ab30ce36b27d6ec62d15d2aa87a3.png" ;
@@ -159,10 +158,12 @@ ns1:1207666213 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/1968d2c451d03b15d81528e3bf65de7ca900ab30ce36b27d6ec62d15d2aa87a3_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_en "English" ;
     ns1:links_forum <https://www.gog.com/forum/a_golden_wake> ;
     ns1:links_product_card <https://www.gog.com/en/game/a_golden_wake> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207666213> ;
@@ -172,13 +173,21 @@ ns1:1207666213 ns1:content_system_compatibility_linux false ;
     ns1:slug "a_golden_wake" ;
     ns1:title "A Golden Wake" .
 
-ns1:1207666783 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx true ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
+ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:dlcs_products "[{'id': 1518972204, 'link': 'https://api.gog.com/products/1518972204', 'expanded_link': 'https://api.gog.com/products/1518972204'}]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_br,
+        ns1:lang_cn,
+        ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_es,
+        ns1:lang_fr,
+        ns1:lang_it,
+        ns1:lang_jp,
+        ns1:lang_ko,
+        ns1:lang_pl,
+        ns1:lang_ru ;
     ns1:id 1207666783 ;
     ns1:images_background "//images-2.gog-statics.com/bf4b4e2fd1f382e106e65835e292d62c869cfca71fbe68f75d0a0206380e67f3.jpg" ;
     ns1:images_icon "//images-2.gog-statics.com/da974a8760c08925023e54cb2194e4e91de929f3cdc70ea7ee35582f65aaef15.png" ;
@@ -190,20 +199,12 @@ ns1:1207666783 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/da974a8760c08925023e54cb2194e4e91de929f3cdc70ea7ee35582f65aaef15_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_br "Português do Brasil" ;
-    ns1:languages_cn "中文(简体)" ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_es "español" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_it "italiano" ;
-    ns1:languages_jp "日本語" ;
-    ns1:languages_ko "한국어" ;
-    ns1:languages_pl "polski" ;
-    ns1:languages_ru "русский" ;
     ns1:links_forum <https://www.gog.com/forum/bird_story_a> ;
     ns1:links_product_card <https://www.gog.com/en/game/a_bird_story> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207666783> ;
@@ -213,11 +214,9 @@ ns1:1207666783 ns1:content_system_compatibility_linux false ;
     ns1:slug "a_bird_story" ;
     ns1:title "A Bird Story" .
 
-ns1:1441269533 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx true ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs "[]" ;
+ns1:1441269533 ns1:dlcs "[]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_en ;
     ns1:id 1441269533 ;
     ns1:images_background "//images-1.gog-statics.com/33cd3f02e438bf859dd02a18418116a2e69fb641d2e59fd66b420ec83fb3bb98.jpg" ;
     ns1:images_icon "//images-4.gog-statics.com/92fc24aa47b7b438069d5b8db9d9a282a82cc58e04f5c046d79c2ca758ca8ade.png" ;
@@ -229,10 +228,12 @@ ns1:1441269533 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/92fc24aa47b7b438069d5b8db9d9a282a82cc58e04f5c046d79c2ca758ca8ade_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_en "English" ;
     ns1:links_forum <https://www.gog.com/forum/80_days> ;
     ns1:links_product_card <https://www.gog.com/en/game/80_days> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1441269533> ;
@@ -242,13 +243,11 @@ ns1:1441269533 ns1:content_system_compatibility_linux false ;
     ns1:slug "80_days" ;
     ns1:title "80 Days" .
 
-ns1:1442910587 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx false ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1443004526> ;
+ns1:1442910587 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1443004526> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1443004526> ;
     ns1:dlcs_products "[{'id': 1443004526, 'link': 'https://api.gog.com/products/1443004526', 'expanded_link': 'https://api.gog.com/products/1443004526'}]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_en ;
     ns1:id 1442910587 ;
     ns1:images_background "//images-2.gog-statics.com/cc793db2e8bd44113e9692504a7e3ce36c8936b56dc939d1198af156130a7d3f.jpg" ;
     ns1:images_icon "//images-3.gog-statics.com/f30d660b3165013b68b52eb3c645d5b65d9a5635abf546892a610fd8860b00b4.png" ;
@@ -260,10 +259,12 @@ ns1:1442910587 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-2.gog-statics.com/f30d660b3165013b68b52eb3c645d5b65d9a5635abf546892a610fd8860b00b4_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_en "English" ;
     ns1:links_forum <https://www.gog.com/forum/fistful_of_gun_a> ;
     ns1:links_product_card <https://www.gog.com/en/game/a_fistful_of_gun> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1442910587> ;
@@ -273,13 +274,17 @@ ns1:1442910587 ns1:content_system_compatibility_linux false ;
     ns1:slug "a_fistful_of_gun" ;
     ns1:title "A Fistful of Gun" .
 
-ns1:1459441475 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx true ;
-    ns1:content_system_compatibility_windows true ;
-    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1626989378> ;
+ns1:1459441475 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1626989378> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1626989378> ;
     ns1:dlcs_products "[{'id': 1626989378, 'link': 'https://api.gog.com/products/1626989378', 'expanded_link': 'https://api.gog.com/products/1626989378'}]" ;
     ns1:game_type "game" ;
+    ns1:hasLanguage ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_es,
+        ns1:lang_fa,
+        ns1:lang_fr,
+        ns1:lang_ru,
+        ns1:lang_tr ;
     ns1:id 1459441475 ;
     ns1:images_background "//images-2.gog-statics.com/ec04b018f1c1b8d3594e026564a75fc583016b2e25309586934332a106294c34.jpg" ;
     ns1:images_icon "//images-2.gog-statics.com/60c44b848281c0433f2e39ce0837a6ef52b0124cb8607b5baa4dd2a272d386e8.png" ;
@@ -291,16 +296,12 @@ ns1:1459441475 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-1.gog-statics.com/60c44b848281c0433f2e39ce0837a6ef52b0124cb8607b5baa4dd2a272d386e8_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_es "español" ;
-    ns1:languages_fa "فارسی" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_ru "русский" ;
-    ns1:languages_tr "Türkçe" ;
     ns1:links_forum <https://www.gog.com/forum/1979_revolution_black_friday> ;
     ns1:links_product_card <https://www.gog.com/en/game/revolution_1979_black_friday> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1459441475> ;
@@ -310,11 +311,22 @@ ns1:1459441475 ns1:content_system_compatibility_linux false ;
     ns1:slug "revolution_1979_black_friday" ;
     ns1:title "1979 Revolution: Black Friday" .
 
-ns1:1684728509 ns1:content_system_compatibility_linux false ;
-    ns1:content_system_compatibility_osx false ;
-    ns1:content_system_compatibility_windows false ;
-    ns1:dlcs "[]" ;
+ns1:1684728509 ns1:dlcs "[]" ;
     ns1:game_type "dlc" ;
+    ns1:hasLanguage ns1:lang_ar,
+        ns1:lang_cn,
+        ns1:lang_de,
+        ns1:lang_en,
+        ns1:lang_es,
+        ns1:lang_fr,
+        ns1:lang_hu,
+        ns1:lang_it,
+        ns1:lang_nl,
+        ns1:lang_pl,
+        ns1:lang_pt,
+        ns1:lang_ro,
+        ns1:lang_ru,
+        ns1:lang_tr ;
     ns1:id 1684728509 ;
     ns1:images_background "//images-3.gog-statics.com/c84308c79f743e00e8aacaa95d0e697bada0e2fb6170cd7c6294cc9326c0f214.jpg" ;
     ns1:images_icon "//images-3.gog-statics.com/d8fe5d9405b98116cbe27d68c72725c81d391af8657a1d248db6df93c05fefd2.png" ;
@@ -326,23 +338,12 @@ ns1:1684728509 ns1:content_system_compatibility_linux false ;
     ns1:images_sidebarIcon2x "//images-4.gog-statics.com/d8fe5d9405b98116cbe27d68c72725c81d391af8657a1d248db6df93c05fefd2_sbicon_2x.png" ;
     ns1:in_development_active false ;
     ns1:in_development_until "None" ;
+    ns1:isSystemCompatibleWith <http://dbpedia.org/resource/Linux>,
+        <http://dbpedia.org/resource/MacOS>,
+        <http://dbpedia.org/resource/Microsoft_Windows> ;
     ns1:is_installable true ;
     ns1:is_pre_order false ;
     ns1:is_secret false ;
-    ns1:languages_ar "العربية" ;
-    ns1:languages_cn "中文(简体)" ;
-    ns1:languages_de "Deutsch" ;
-    ns1:languages_en "English" ;
-    ns1:languages_es "español" ;
-    ns1:languages_fr "français" ;
-    ns1:languages_hu "magyar" ;
-    ns1:languages_it "italiano" ;
-    ns1:languages_nl "nederlands" ;
-    ns1:languages_pl "polski" ;
-    ns1:languages_pt "português" ;
-    ns1:languages_ro "română" ;
-    ns1:languages_ru "русский" ;
-    ns1:languages_tr "Türkçe" ;
     ns1:links_forum <https://www.gog.com/forum/8bit_armies> ;
     ns1:links_product_card <https://www.gog.com/en/game/8bit_armies_guardians_campaign> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1684728509> ;
@@ -351,4 +352,40 @@ ns1:1684728509 ns1:content_system_compatibility_linux false ;
     ns1:release_date "2016-06-04T01:00:00+0300" ;
     ns1:slug "8bit_armies_guardians_campaign" ;
     ns1:title "8-bit Armies - Guardians Campaign" .
+
+ns1:lang_fa rdfs:label "فارسی"^^xsd:string .
+
+ns1:lang_jp rdfs:label "日本語"^^xsd:string .
+
+ns1:lang_ko rdfs:label "한국어"^^xsd:string .
+
+ns1:lang_pt rdfs:label "português"^^xsd:string .
+
+ns1:lang_ar rdfs:label "العربية"^^xsd:string .
+
+ns1:lang_br rdfs:label "Português do Brasil"^^xsd:string .
+
+ns1:lang_hu rdfs:label "magyar"^^xsd:string .
+
+ns1:lang_nl rdfs:label "nederlands"^^xsd:string .
+
+ns1:lang_ro rdfs:label "română"^^xsd:string .
+
+ns1:lang_cn rdfs:label "中文(简体)"^^xsd:string .
+
+ns1:lang_tr rdfs:label "Türkçe"^^xsd:string .
+
+ns1:lang_pl rdfs:label "polski"^^xsd:string .
+
+ns1:lang_ru rdfs:label "русский"^^xsd:string .
+
+ns1:lang_es rdfs:label "español"^^xsd:string .
+
+ns1:lang_it rdfs:label "italiano"^^xsd:string .
+
+ns1:lang_fr rdfs:label "français"^^xsd:string .
+
+ns1:lang_de rdfs:label "Deutsch"^^xsd:string .
+
+ns1:lang_en rdfs:label "English"^^xsd:string .
 
