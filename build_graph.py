@@ -3,9 +3,10 @@ from rdflib.namespace import FOAF, RDF, RDFS, XSD
 import requests
 from validators import url
 
-
+# constants 
 BASE_URL = 'https://api.gog.com'
 NAMESPACE = 'goggraph/'
+# external resource constants
 MAC_OS = 'http://dbpedia.org/resource/MacOS'
 WINDOWS = 'http://dbpedia.org/resource/Microsoft_Windows'
 LINUX = 'http://dbpedia.org/resource/Linux'
@@ -24,9 +25,11 @@ def dict_to_triples(subject: URIRef, props: dict, prefix: str = "") -> list[tupl
             predicates.update({prefix_key: URIRef(NAMESPACE+prefix_key)})
 
         obj = props[key]
-        if key == 'languages':
+        if prefix_key == 'languages':
             triples.extend(lang_to_triples(subject, obj))
-        elif key == 'content_system_compatibility':
+        elif prefix_key == 'dlcs_products':
+            triples.extend(dlc_triples(subject, obj))
+        elif prefix_key == 'content_system_compatibility':
             triples.extend(system_compatibility_triples(subject, obj))
         elif type(obj) is dict:
             triples.extend(dict_to_triples(subject, obj, prefix=prefix_key))
@@ -68,7 +71,12 @@ def system_compatibility_triples(subject: URIRef, props: dict) -> list[tuple]:
 
     return triples
 
-
+def dlc_triples(subject: URIRef, dlcs: list[dict]) -> list[tuple]:
+    triples = []
+    for dlc in dlcs:
+        dlc_id = str(dlc['id'])
+        triples.append((subject, predicates["hasDLC"], URIRef(NAMESPACE+dlc_id)))
+    return triples
 
 if __name__ == "__main__":
 
@@ -84,7 +92,8 @@ if __name__ == "__main__":
     # fill predicates with some hard-coded values
     predicates.update([
         ( "hasLanguage", URIRef(NAMESPACE+"hasLanguage") ),
-        ( "systemCompat", URIRef(NAMESPACE+"isSystemCompatibleWith"))
+        ( "systemCompat", URIRef(NAMESPACE+"isSystemCompatibleWith")),
+        ( "hasDLC", URIRef(NAMESPACE+"hasDLC")),
     ])
 
     graph = Graph()

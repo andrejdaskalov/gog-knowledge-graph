@@ -4,8 +4,8 @@
 
 ns1:1104739253 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1099102953> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1099102953> ;
-    ns1:dlcs_products "[{'id': 1099102953, 'link': 'https://api.gog.com/products/1099102953', 'expanded_link': 'https://api.gog.com/products/1099102953'}]" ;
     ns1:game_type "game" ;
+    ns1:hasDLC ns1:1099102953 ;
     ns1:hasLanguage ns1:lang_ar,
         ns1:lang_br,
         ns1:lang_cn,
@@ -48,8 +48,9 @@ ns1:1104739253 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=10991
 
 ns1:1207658658 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
-    ns1:dlcs_products "[{'id': 1174619559, 'link': 'https://api.gog.com/products/1174619559', 'expanded_link': 'https://api.gog.com/products/1174619559'}, {'id': 1460547741, 'link': 'https://api.gog.com/products/1460547741', 'expanded_link': 'https://api.gog.com/products/1460547741'}]" ;
     ns1:game_type "game" ;
+    ns1:hasDLC ns1:1174619559,
+        ns1:1460547741 ;
     ns1:hasLanguage ns1:lang_de,
         ns1:lang_en,
         ns1:lang_es,
@@ -175,8 +176,8 @@ ns1:1207666213 ns1:dlcs "[]" ;
 
 ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1518972204> ;
-    ns1:dlcs_products "[{'id': 1518972204, 'link': 'https://api.gog.com/products/1518972204', 'expanded_link': 'https://api.gog.com/products/1518972204'}]" ;
     ns1:game_type "game" ;
+    ns1:hasDLC ns1:1518972204 ;
     ns1:hasLanguage ns1:lang_br,
         ns1:lang_cn,
         ns1:lang_de,
@@ -245,8 +246,8 @@ ns1:1441269533 ns1:dlcs "[]" ;
 
 ns1:1442910587 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1443004526> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1443004526> ;
-    ns1:dlcs_products "[{'id': 1443004526, 'link': 'https://api.gog.com/products/1443004526', 'expanded_link': 'https://api.gog.com/products/1443004526'}]" ;
     ns1:game_type "game" ;
+    ns1:hasDLC ns1:1443004526 ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1442910587 ;
     ns1:images_background "//images-2.gog-statics.com/cc793db2e8bd44113e9692504a7e3ce36c8936b56dc939d1198af156130a7d3f.jpg" ;
@@ -276,8 +277,8 @@ ns1:1442910587 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=14430
 
 ns1:1459441475 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1626989378> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1626989378> ;
-    ns1:dlcs_products "[{'id': 1626989378, 'link': 'https://api.gog.com/products/1626989378', 'expanded_link': 'https://api.gog.com/products/1626989378'}]" ;
     ns1:game_type "game" ;
+    ns1:hasDLC ns1:1626989378 ;
     ns1:hasLanguage ns1:lang_de,
         ns1:lang_en,
         ns1:lang_es,
