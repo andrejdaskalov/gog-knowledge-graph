@@ -31,6 +31,11 @@ def dict_to_triples(subject: URIRef, props: dict, prefix: str = "") -> list[tupl
             triples.extend(dlc_triples(subject, obj))
         elif prefix_key == 'content_system_compatibility':
             triples.extend(system_compatibility_triples(subject, obj))
+        elif prefix_key == 'game_type':
+            game_type = obj
+            if game_type not in game_types.keys():
+                game_types.update({game_type: URIRef(NAMESPACE+game_type)})
+            triples.append((subject, predicates['gameType'], game_types[game_type]))
         elif type(obj) is dict:
             triples.extend(dict_to_triples(subject, obj, prefix=prefix_key))
         else:
@@ -78,6 +83,7 @@ def dlc_triples(subject: URIRef, dlcs: list[dict]) -> list[tuple]:
         triples.append((subject, predicates["hasDLC"], URIRef(NAMESPACE+dlc_id)))
     return triples
 
+
 if __name__ == "__main__":
 
     # load game ids from file 
@@ -88,12 +94,14 @@ if __name__ == "__main__":
     # dicts to hold some reused nodes
     predicates = dict()
     languages = dict()
+    game_types = dict()
     
     # fill predicates with some hard-coded values
     predicates.update([
         ( "hasLanguage", URIRef(NAMESPACE+"hasLanguage") ),
         ( "systemCompat", URIRef(NAMESPACE+"isSystemCompatibleWith")),
         ( "hasDLC", URIRef(NAMESPACE+"hasDLC")),
+        ( "gameType", URIRef(NAMESPACE+"gameType") ),
     ])
 
     graph = Graph()

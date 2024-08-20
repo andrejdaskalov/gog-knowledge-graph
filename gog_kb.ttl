@@ -4,7 +4,7 @@
 
 ns1:1104739253 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1099102953> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1099102953> ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasDLC ns1:1099102953 ;
     ns1:hasLanguage ns1:lang_ar,
         ns1:lang_br,
@@ -48,7 +48,7 @@ ns1:1104739253 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=10991
 
 ns1:1207658658 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1174619559%2C1460547741> ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasDLC ns1:1174619559,
         ns1:1460547741 ;
     ns1:hasLanguage ns1:lang_de,
@@ -83,7 +83,7 @@ ns1:1207658658 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=11746
     ns1:title "1nsane" .
 
 ns1:1207660773 ns1:dlcs "[]" ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasLanguage ns1:lang_de,
         ns1:lang_en,
         ns1:lang_it ;
@@ -114,7 +114,7 @@ ns1:1207660773 ns1:dlcs "[]" ;
     ns1:title "7th Legion" .
 
 ns1:1207664483 ns1:dlcs "[]" ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasLanguage ns1:lang_de,
         ns1:lang_en,
         ns1:lang_fr,
@@ -146,7 +146,7 @@ ns1:1207664483 ns1:dlcs "[]" ;
     ns1:title "1849: Gold Edition" .
 
 ns1:1207666213 ns1:dlcs "[]" ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1207666213 ;
     ns1:images_background "//images-3.gog-statics.com/e7c0608f17b06dbfcceed3a71a4e49138ae654c666477da456010ab65d0ef70a.jpg" ;
@@ -176,7 +176,7 @@ ns1:1207666213 ns1:dlcs "[]" ;
 
 ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1518972204> ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasDLC ns1:1518972204 ;
     ns1:hasLanguage ns1:lang_br,
         ns1:lang_cn,
@@ -216,7 +216,7 @@ ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=15189
     ns1:title "A Bird Story" .
 
 ns1:1441269533 ns1:dlcs "[]" ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1441269533 ;
     ns1:images_background "//images-1.gog-statics.com/33cd3f02e438bf859dd02a18418116a2e69fb641d2e59fd66b420ec83fb3bb98.jpg" ;
@@ -246,7 +246,7 @@ ns1:1441269533 ns1:dlcs "[]" ;
 
 ns1:1442910587 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1443004526> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1443004526> ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasDLC ns1:1443004526 ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1442910587 ;
@@ -277,7 +277,7 @@ ns1:1442910587 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=14430
 
 ns1:1459441475 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1626989378> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1626989378> ;
-    ns1:game_type "game" ;
+    ns1:gameType ns1:game ;
     ns1:hasDLC ns1:1626989378 ;
     ns1:hasLanguage ns1:lang_de,
         ns1:lang_en,
@@ -313,7 +313,7 @@ ns1:1459441475 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=16269
     ns1:title "1979 Revolution: Black Friday" .
 
 ns1:1684728509 ns1:dlcs "[]" ;
-    ns1:game_type "dlc" ;
+    ns1:gameType ns1:dlc ;
     ns1:hasLanguage ns1:lang_ar,
         ns1:lang_cn,
         ns1:lang_de,
