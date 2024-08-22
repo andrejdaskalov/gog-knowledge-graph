@@ -145,8 +145,11 @@ ns1:1207664483 ns1:dlcs "[]" ;
     ns1:slug "1849_the_gold_rush" ;
     ns1:title "1849: Gold Edition" .
 
-ns1:1207666213 ns1:dlcs "[]" ;
+ns1:1207666213 ns1:dbpEntry <http://dbpedia.org/resource/A_Golden_Wake> ;
+    ns1:developer <http://dbpedia.org/resource/Grundislav_Games> ;
+    ns1:dlcs "[]" ;
     ns1:gameType ns1:game ;
+    ns1:genre <http://dbpedia.org/resource/Adventure_game> ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1207666213 ;
     ns1:images_background "//images-3.gog-statics.com/e7c0608f17b06dbfcceed3a71a4e49138ae654c666477da456010ab65d0ef70a.jpg" ;
@@ -169,14 +172,18 @@ ns1:1207666213 ns1:dlcs "[]" ;
     ns1:links_product_card <https://www.gog.com/en/game/a_golden_wake> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207666213> ;
     ns1:links_support <https://www.gog.com/support/a_golden_wake> ;
+    ns1:publisher <http://dbpedia.org/resource/Wadjet_Eye_Games> ;
     ns1:purchase_link <https://www.gog.com/en/checkout/manual/1207666213> ;
     ns1:release_date "2014-10-09T09:59:00+0300" ;
     ns1:slug "a_golden_wake" ;
     ns1:title "A Golden Wake" .
 
-ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
+ns1:1207666783 ns1:dbpEntry <http://dbpedia.org/resource/A_Bird_Story> ;
+    ns1:developer <http://dbpedia.org/resource/Freebird_Games> ;
+    ns1:dlcs_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:dlcs_expanded_all_products_url <https://api.gog.com/products?ids=1518972204> ;
     ns1:gameType ns1:game ;
+    ns1:genre <http://dbpedia.org/resource/Role-playing_video_game> ;
     ns1:hasDLC ns1:1518972204 ;
     ns1:hasLanguage ns1:lang_br,
         ns1:lang_cn,
@@ -210,13 +217,17 @@ ns1:1207666783 ns1:dlcs_all_products_url <https://api.gog.com/products?ids=15189
     ns1:links_product_card <https://www.gog.com/en/game/a_bird_story> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1207666783> ;
     ns1:links_support <https://www.gog.com/support/a_bird_story> ;
+    ns1:publisher <http://dbpedia.org/resource/Freebird_Games> ;
     ns1:purchase_link <https://www.gog.com/en/checkout/manual/1207666783> ;
     ns1:release_date "2014-11-07T09:00:00+0200" ;
     ns1:slug "a_bird_story" ;
     ns1:title "A Bird Story" .
 
-ns1:1441269533 ns1:dlcs "[]" ;
+ns1:1441269533 ns1:dbpEntry <http://dbpedia.org/resource/Around_the_World_in_80_Days_(video_game)> ;
+    ns1:developer <http://dbpedia.org/resource/Saffire_(company)> ;
+    ns1:dlcs "[]" ;
     ns1:gameType ns1:game ;
+    ns1:genre <http://dbpedia.org/resource/Action-adventure_game> ;
     ns1:hasLanguage ns1:lang_en ;
     ns1:id 1441269533 ;
     ns1:images_background "//images-1.gog-statics.com/33cd3f02e438bf859dd02a18418116a2e69fb641d2e59fd66b420ec83fb3bb98.jpg" ;
@@ -239,6 +250,7 @@ ns1:1441269533 ns1:dlcs "[]" ;
     ns1:links_product_card <https://www.gog.com/en/game/80_days> ;
     ns1:links_purchase_link <https://www.gog.com/en/checkout/manual/1441269533> ;
     ns1:links_support <https://www.gog.com/support/80_days> ;
+    ns1:publisher <http://dbpedia.org/resource/Disney_Interactive> ;
     ns1:purchase_link <https://www.gog.com/en/checkout/manual/1441269533> ;
     ns1:release_date "2015-09-29T12:50:00+0300" ;
     ns1:slug "80_days" ;

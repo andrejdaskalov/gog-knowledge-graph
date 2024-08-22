@@ -2,6 +2,8 @@ from rdflib import Graph, URIRef, Literal, BNode
 from rdflib.namespace import FOAF, RDF, RDFS, XSD
 import requests
 from validators import url
+from SPARQLWrapper import JSON, SPARQLWrapper
+from fetch_from_dbpedia import dbpedia_fetch
 
 # constants 
 BASE_URL = 'https://api.gog.com'
@@ -102,21 +104,39 @@ if __name__ == "__main__":
         ( "systemCompat", URIRef(NAMESPACE+"isSystemCompatibleWith")),
         ( "hasDLC", URIRef(NAMESPACE+"hasDLC")),
         ( "gameType", URIRef(NAMESPACE+"gameType") ),
+        ( "dbpEntry", URIRef(NAMESPACE+"dbpEntry") ),
+        ( "developer", URIRef(NAMESPACE+"developer") ),
+        ( "publisher", URIRef(NAMESPACE+"publisher") ),
+        ( "genre", URIRef(NAMESPACE+"genre") ),
     ])
 
     graph = Graph()
 
-
     for game_id in game_ids[:10]:
+
         try:
             game : dict = requests.get(BASE_URL+'/products/'+ game_id).json()
         except ValueError:
             print(f'Problem with game id: {game_id}.')
             continue
+
         game_entity = URIRef(NAMESPACE+ str( game['id'] ))
         triples = dict_to_triples(game_entity, game)
+
         for triple in triples:
             graph.add(triple)
+
+        title = game['title']
+        dbp_game, dev, pub, genre = dbpedia_fetch(title)
+        if dbp_game != '' :
+            graph.add((game_entity, predicates['dbpEntry'], URIRef( dbp_game )))
+        if dev != '' :
+            graph.add((game_entity, predicates['developer'], URIRef( dev )))
+        if pub != '' :
+            graph.add((game_entity, predicates['publisher'], URIRef( pub )))
+        if genre != '' :
+            graph.add((game_entity, predicates['genre'], URIRef( genre )))
+
 
     graph.serialize(destination="gog_kb.ttl", format="ttl")
 
