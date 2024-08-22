@@ -7,14 +7,18 @@ g = Graph()
 g = g.parse("gog_kb.ttl", format="turtle")
 
 example_query = """
-    prefix gog: <file:///home/andrej/wbs/goggraph>
-    select ?game_title ?dlc_title
+    # get the titles of all games that have dlcs along with the genre, publisher and developer (if information exists) 
+    prefix gog: <file:///home/andrej/wbs/goggraph/>
+    select ?game_title ?dlc_title ?genre ?developer ?publisher
     where {
-        ?game gog:hasDLC ?dlc .
         ?game gog:title ?game_title .
-        ?dlc gog:title ?dlc_title
-    }
+        ?game gog:hasDLC ?dlc .
+        ?dlc gog:title ?dlc_title .
+        optional {?game gog:genre ?genre.} .
+        optional {?game gog:developer ?developer} .
+        optional {?game gog:publisher ?publisher} .
 
+    }
 """
 
 app = SparqlEndpoint(

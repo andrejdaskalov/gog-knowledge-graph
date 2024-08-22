@@ -2,7 +2,6 @@ from rdflib import Graph, URIRef, Literal, BNode
 from rdflib.namespace import FOAF, RDF, RDFS, XSD
 import requests
 from validators import url
-from SPARQLWrapper import JSON, SPARQLWrapper
 from fetch_from_dbpedia import dbpedia_fetch
 
 # constants 
@@ -111,8 +110,11 @@ if __name__ == "__main__":
     ])
 
     graph = Graph()
+    
+    processed_games = 0
+    total_games = len(game_ids)
 
-    for game_id in game_ids[:10]:
+    for game_id in game_ids:
 
         try:
             game : dict = requests.get(BASE_URL+'/products/'+ game_id).json()
@@ -136,9 +138,13 @@ if __name__ == "__main__":
             graph.add((game_entity, predicates['publisher'], URIRef( pub )))
         if genre != '' :
             graph.add((game_entity, predicates['genre'], URIRef( genre )))
+        
+        processed_games+=1
+        print(f"{processed_games}/{total_games} processed...",end="\r")
 
-
+    print()
     graph.serialize(destination="gog_kb.ttl", format="ttl")
+    print("Finished building graph!")
 
 
 
